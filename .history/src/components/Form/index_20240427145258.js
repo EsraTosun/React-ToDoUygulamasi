@@ -22,8 +22,7 @@ function Form() {
     };
 
     return (
-		// Boş bir Fragment döndürür.
-        <> 
+        <> // Boş bir Fragment döndürür.
             <Formik // Formik bileşenini kullanarak form oluşturur.
                 initialValues={{ // Formun başlangıç değerlerini belirler.
                     text: "", // Boş bir metin değeri ile başlar.
@@ -41,9 +40,8 @@ function Form() {
                     isValid, // Formun geçerli olup olmadığını belirler.
                     isSubmitting, // Formun gönderilmekte olup olmadığını belirler.
                     setFieldValue, // Form alanlarının değerlerini belirler.
-                }) => ( 
-					// Form gönderildiğinde onSubmit işlevini çağırır.
-                    <form onSubmit={handleSubmit}> 
+                }) => (
+                    <form onSubmit={handleSubmit}> // Form gönderildiğinde onSubmit işlevini çağırır.
                         <input // Metin giriş alanını oluşturur.
                             onChange={handleChange("text")} // Değer değiştiğinde çağrılacak işlevi belirler.
                             name="text" // Alanın adını belirler.

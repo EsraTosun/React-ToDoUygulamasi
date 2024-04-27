@@ -19,12 +19,12 @@ function Content() {
                 <label htmlFor="toggle-all" mv-action="set(done, !toggleAll)"> // Tüm görevleri işaretleme etiketi oluşturur.
                     Mark all as complete // Tümünü tamamlandı olarak işaretle
                 </label>
-                <TodoList /> 
+
+                <TodoList /> // TodoList bileşenini içerir.
             </section>
-            <ContentFooter /> 		
+
+            <ContentFooter /> // ContentFooter bileşenini içerir.
         </>
-				// TodoList bileşenini içerir.
-			// ContentFooter bileşenini içerir.
     );
 }
 

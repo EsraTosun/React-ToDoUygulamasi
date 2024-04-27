@@ -31,8 +31,7 @@ function TodoList() {
     return (
         <ul className="todo-list"> {/*// Görevlerin listelendiği bir liste oluşturur. */}
             {filtered.map((todo, index) => ( // Filtrelenmiş görevleri haritalar ve listeler.
-                <li key={index} className={todo.completed ? "completed" : ""}> 
-				{/*// Görevin tamamlanma durumuna göre CSS sınıfını belirler. */}
+                <li key={index} className={todo.completed ? "completed" : ""}> // Görevin tamamlanma durumuna göre CSS sınıfını belirler.
                     <div className="view"> {/* // Görevin görüntüsünü oluşturur.*/}
                         <input // Görevin tamamlanma durumunu değiştiren bir onay kutusu oluşturur.
                             property="done"
